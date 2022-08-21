@@ -1,0 +1,311 @@
+/* 
+--desktop: 1200px;
+--laptop: 1024px;
+--tablet: 768px;
+--phone: 480px; 
+*/
+
+.landing-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0px;
+}
+
+#welcome{
+    opacity: 0;
+    animation: slideInOnLoadY .5s forwards;
+    -webkit-animation: slideInOnLoadY .5s forwards;
+    animation-delay: 1s;
+}
+
+#name{
+    opacity: 0;
+    animation: slideInOnLoadY 1s forwards;
+    -webkit-animation: slideInOnLoadY 1s forwards;
+    animation-delay: 1.25s;
+}
+
+.phrase-text{
+    opacity: 0;
+    animation: slideInOnLoadLeft .5s forwards;
+    -webkit-animation: slideInOnLoadLeft .5s forwards;
+    animation-delay: 1.75s;
+}
+
+.landing-text{
+    opacity: 0;
+    animation: slideInOnLoadRight .5s forwards;
+    -webkit-animation: slideInOnLoadRight .5s forwards;
+    animation-delay: 2s;
+}
+
+.landing-btn{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    border: 1px solid rgb(100, 255, 218);
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-top: 40px;
+    opacity: 0;
+    animation: slideInOnLoadY 1s forwards;
+    -webkit-animation: slideInOnLoadY 1s forwards;
+    animation-delay: 2.25s;
+}
+
+/* styles for desktop */
+@media screen and (min-width: 1200px) {
+    .landing-section{
+        margin: 35px 50px 0px -125px;
+        text-align: left;
+        align-content: center;
+    }
+    
+    #welcome{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;   
+        color: rgb(100, 255, 218);
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    
+    #name{
+        font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+        font-size: clamp(40px, 8vw, 75px);
+        font-weight: 600;
+        color: rgb(204, 214, 246);
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .phrase-text{
+        font-size: clamp(36px, 8vw, 75px);
+        font-weight: 600;
+        color: rgb(136, 146, 176);
+        min-width: inherit;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    
+    .landing-text{
+        display: block;
+        box-sizing: border-box;
+        max-width: 540px;
+        line-height: 23.4px;
+        font-size: 16px;
+        color: rgb(136, 146, 176);
+        font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;       
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .landing-btn{
+        font-size: 15px;
+    }
+
+}
+
+/* styles for laptop */
+@media screen and (max-width: 1024px) {
+    .landing-section{
+        margin: 0px 100px 0px 100px;
+        text-align: left;
+        align-content: center;
+    }
+    
+    #welcome{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;   
+        color: rgb(100, 255, 218);
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    
+    #name{
+        font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+        font-size: clamp(40px, 8vw, 80px);
+        font-weight: 600;
+        color: rgb(204, 214, 246);
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .phrase-text{
+        font-size: clamp(36px, 8vw, 80px);
+        font-weight: 600;
+        color: rgb(136, 146, 176);
+        min-width: inherit;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    
+    .landing-text{
+        display: block;
+        box-sizing: border-box;
+        max-width: 540px;
+        line-height: 23.4px;
+        font-size: 19px;
+        color: rgb(136, 146, 176);
+        font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;       
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .landing-btn{
+        font-size: 15px;
+    }
+}
+
+/* styles for tablet */
+@media screen and (max-width: 821px) {
+    .landing-section{
+        margin: 0px 100px 0px 100px;
+        text-align: left;
+        align-content: center;
+    }
+    
+    #welcome{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;   
+        color: rgb(100, 255, 218);
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    
+    #name{
+        font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+        font-size: clamp(40px, 8vw, 80px);
+        font-weight: 600;
+        color: rgb(204, 214, 246);
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .phrase-text{
+        font-size: clamp(36px, 8vw, 80px);
+        font-weight: 600;
+        color: rgb(136, 146, 176);
+        min-width: inherit;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    
+    .landing-text{
+        display: block;
+        box-sizing: border-box;
+        max-width: 540px;
+        line-height: 23.4px;
+        font-size: 19px;
+        color: rgb(136, 146, 176);
+        font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;       
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .landing-btn{
+        font-size: 15px;
+    }
+}
+
+/* styles for phone */
+@media screen and (max-width: 480px) {
+
+    .landing-section{
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: left;
+        align-content: center;
+    }
+    
+    #welcome{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;   
+        color: rgb(100, 255, 218);
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    
+    #name{
+        font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+        font-size: clamp(40px, 8vw, 80px);
+        font-weight: 600;
+        color: rgb(204, 214, 246);
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .phrase-text{
+        font-size: clamp(36px, 8vw, 80px);
+        font-weight: 600;
+        color: rgb(136, 146, 176);
+        min-width: inherit;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    
+    .landing-text{
+        display: block;
+        box-sizing: border-box;
+        max-width: 540px;
+        line-height: 23.4px;
+        font-size: 15px;
+        color: rgb(136, 146, 176);
+        font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;       
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .landing-btn{
+
+    }
+}
+
+@keyframes slideInOnLoadY {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInOnLoadLeft {
+    0%{
+        opacity: 0;
+        transform: translatex(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0%);
+    }
+}
+
+@keyframes slideInOnLoadRight {
+    0%{
+        opacity: 0;
+        transform: translatex(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0%);
+    }
+}

@@ -1,0 +1,385 @@
+/* 
+--desktop: 1200px;
+--laptop: 1024px;
+--tablet: 768px;
+--phone: 480px; 
+*/
+.content{
+  width: 100vw;
+  display: flex;
+}
+
+.skills-section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 80px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.start{
+  visibility: visible;
+  opacity: 0;
+  animation: fadeIn 1.5s .25s forwards;
+  -webkit-animation: fadeIn 1.5s .25s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+#skillsTitleContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#skillsNum{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: rgb(100, 255, 218);
+    font-size: 25px;
+}
+
+#skillsTitle{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+    color: rgb(204, 214, 246);
+    margin-right: 10px;
+}
+
+#skillsLine{
+    border: 1px solid rgb(136, 146, 176);
+    flex: 1 1 auto;
+}
+
+.skills-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-text{
+  flex: 1 1 0px;
+  text-align: left;
+  margin-top: -20px;
+}
+
+.experience-text{
+  display: block;
+  box-sizing: border-box;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  font-weight: 350;
+  color: rgb(136, 146, 176);
+  margin-right: 40px;
+}
+
+.knowledge-text{
+  display: block;
+  box-sizing: border-box;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  font-weight: 350;
+  color: rgb(136, 146, 176);
+  margin-right: 40px;
+}
+
+.content-footer{
+  display: block;
+  box-sizing: border-box;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  font-weight: 350;
+  color: rgb(136, 146, 176);
+  margin-right: 40px;
+}
+
+.keyWord{
+  color:rgb(100, 255, 218);
+  text-decoration: underline;
+}
+
+.skills-content{
+  
+}
+
+.skills-progress-container{
+  flex: 1 1 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-progress-container > div{
+  flex: 1 1 0px;
+  text-align: left;
+}
+
+.progress-label{
+  display: block;
+  box-sizing: border-box;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  font-weight: 600;
+  color: rgb(204, 214, 246);
+}
+
+.progress{
+  margin-top: 10px;
+  height: 2px;
+  background: rgba( 255, 255, 255, 0.15 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  overflow: hidden;
+}
+
+#filler1{
+  height: 2px;
+  width: 86%;
+  background-color: rgb(12,253,215);
+} 
+
+#filler2{
+  height: 2px;
+  width: 60%;
+  background-color: rgb(255,32,83);
+}
+
+#filler3{
+  height: 2px;
+  width: 93%;
+  background-color: rgb(12,253,215);
+}
+
+#filler4{
+  height: 2px;
+  width: 50%;
+  background-color: rgb(12,253,215);
+  background-color: rgb(210,108,213);
+}
+
+#filler5{
+  height: 2px;
+  width: 82%;
+  background-color: rgb(255,32,83);
+}
+
+.skills-index-container{
+
+}
+
+.skills-index{
+  display: grid;
+  grid-template-columns: repeat(3, 37%);
+  gap: 0 10px;
+  margin: 20px 0px 0px -45px;
+  margin-right: 50px;
+}
+
+.skills-index > li{
+  display: list-item;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.skills-index > li::before{
+  content: "▹";
+  color: rgb(100, 255, 218);
+  line-height: 12px;
+  position: relative;
+}
+
+/* styles for desktop */
+@media screen and (min-width: 1200px){
+
+    .skills-section{
+      width: 60%;
+    }
+ 
+    .skills-media{
+      flex: 1 1 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .experience-text{
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 350;
+    }
+
+    .knowledge-text{
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 350;
+    }
+
+    .content-footer{
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 350;
+    }
+
+    .progress-label{
+      font-size: 18px;
+    }   
+}
+
+/* styles for laptop */
+@media screen and (max-width: 1024px) {
+
+  .skills-section{
+    margin: 0px 100px 0px 100px;
+    min-height: 80vh;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+
+  .skills-text{
+    flex: 1 1 auto;
+  }
+   
+  .skills-media{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-text{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 350;
+  }
+
+  .knowledge-text{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 350;
+  }
+
+  .content-footer{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 350;
+  }
+
+  .progress-label{
+    font-size: 19px;
+  }  
+}
+
+/* styles for tablet */
+@media screen and (max-width: 821px) {
+
+  .skills-section{
+    margin: 0px 100px 0px 100px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+
+  .skills-content{
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+
+  .skills-text{
+    padding-bottom: 20px;
+  }
+   
+  .skills-media{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-text{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 350;
+    margin-right: 35px;
+  }
+
+  .knowledge-text{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 350;
+    margin-right: 35px;
+  }
+
+  .content-footer{
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 350;
+    margin-right: 35px;
+  }
+
+  .progress-label{
+    font-size: 19px;
+    margin-top: 10px;
+  }  
+}
+
+/* styles for phone */
+@media screen and (max-width: 480px) {
+
+  .skills-section{
+    margin: 150px 25px 0px 25px;
+    width: calc(100vw - 50px);
+  }
+
+  #skillsNum{
+    font-size: 20px;
+  }
+
+  #skillsTitle{
+    font-size: 26px;
+  }
+
+  .skills-content{
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+
+  .skills-text{
+    margin-left: 5px;
+    padding-bottom: 20px;
+  }
+   
+  .skills-media{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience-text{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 15px 0 0 0;
+  }
+
+  .knowledge-text{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 15px 0 0 0;
+  }
+
+  .content-footer{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 15px 0 0 0;
+  }
+
+  .progress{
+    margin-bottom: 10px;
+  }
+
+  .progress-label{
+    font-size: 16px;
+  }  
+}

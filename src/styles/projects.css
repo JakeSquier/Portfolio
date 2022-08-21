@@ -1,0 +1,627 @@
+.projects-section{
+    min-height: 100vh;
+    padding: 80px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 200px;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+/* header */
+
+#headerContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#projectNumber{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: rgb(100, 255, 218);
+    font-size: 25px;
+}
+
+#projectTitle{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+    color: rgb(204, 214, 246);
+}
+
+#projectLine{
+    margin-left: 5px;
+    flex: 1 1 auto;
+    border: 1px solid rgb(136, 146, 176);
+}
+
+/* reg projects */
+
+.projects-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 150px;
+}
+
+.project{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 10px; 
+    height: 30%; 
+}
+
+.project-content{
+    display: block;
+    box-sizing: border-box;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 5;
+    grid-column-end: -1;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.featured{
+    font-family: var(--font-mono);
+    color: rgb(100, 255, 218);
+    position: relative;
+    top: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    z-index: 3;
+}
+
+.project-title{
+    color: rgb(204, 214, 246);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    z-index: 3;
+    position: relative;
+    bottom: 5px;
+}
+
+.description-box{
+    height: 120px;
+    width: 500px;
+    background-color: #122340;
+    border-radius: 3px;
+    text-align: right;
+    padding: 10px;
+}
+
+.description{
+    color: rgb(168, 178, 209);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    line-height: 1.1;
+    font-size: 16px;
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+    z-index: 3;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+}
+
+.tech-list{
+    color: rgb(136, 146, 176);
+    align-self: flex-end;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -appl;
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.tech{
+    color: rgb(168, 178, 209);
+    display: list-item;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 13px;
+    line-height: 16.9px;
+    list-style: none;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    column-gap: 20px;
+}
+
+.git-link{
+    height: 20px;
+    color: white;
+    stroke-width: 2;
+}
+
+.git-link:hover { 
+    color: rgb(100, 255, 218); 
+    stroke-width: 2.2px;
+}
+
+.external-link{
+    width: 22px;
+    color: white;
+    stroke-width: 2;
+}
+
+.external-link:hover { 
+    color: rgb(100, 255, 218); 
+    stroke-width: 2.2px;
+}
+
+.project-image{
+    align-self: center;
+    height: 95%;
+    max-width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    background-image: url('../images/sorting.png');
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 5px 20px 5px 20px;
+    border: solid 1px rgb(100, 255, 218);
+}
+
+.inner-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: #64ffda;
+}
+
+/* reverse project */
+
+
+
+.project-reverse{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 10px; 
+    height: 30%; 
+}
+
+
+.project-image-r{
+    align-self: center;
+    height: 95%;
+    max-width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+    background-image: url('../images/pathing.png');
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 5px 20px 5px 20px;
+    border: solid 1px rgb(100, 255, 218);
+    grid-area: 1 / 6 / -1 / -1;
+}
+
+.project-content-r{
+    display: block;
+    box-sizing: border-box;
+    grid-column-end: 7;
+    grid-column-start: 1;
+    grid-row-end: -1;
+    grid-row-start: 1;
+    text-align: left;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.featured-r{
+    font-family: var(--font-mono);
+    color: rgb(100, 255, 218);
+    position: relative;
+    top: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    z-index: 3;
+}
+
+.project-title-r{
+    color: rgb(204, 214, 246);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    z-index: 3;
+    position: relative;
+    bottom: 5px;
+}
+
+.description-box-r{
+    height: 120px;
+    width: 500px;
+    background-color: #122340;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.description-r{
+    color: rgb(168, 178, 209);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    line-height: 1.1;
+    font-size: 16px;
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+    z-index: 3;
+    text-align: left;
+}
+
+.tech-list-r{
+    color: rgb(136, 146, 176);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -appl;
+    font-size: 20px;
+    list-style: none;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    position: relative;
+    right: 40px;
+}
+
+.tech-r{
+    color: rgb(168, 178, 209);
+    display: list-item;
+    justify-self: flex-start;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 13px;
+    line-height: 16.9px;
+    list-style: none;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.btn-container-r{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    column-gap: 20px;
+}
+
+.git-link-r{
+    height: 20px;
+    color: white;
+    stroke-width: 2;
+}
+
+.git-link-r:hover { 
+    color: rgb(100, 255, 218); 
+    stroke-width: 2.2px;
+}
+
+.external-link-r{
+    width: 22px;
+    color: white;
+    stroke-width: 2;
+}
+
+.external-link-r:hover { 
+    color: rgb(100, 255, 218); 
+    stroke-width: 2.2px;
+}
+
+
+
+/* media queries */
+
+/* @media only screen and (max-width: 930px) {
+    #pOneContainer{
+        display: none;
+    }
+    #miniP1{
+        left: 50%;
+        background-image: url("https://i.ytimg.com/vi/ENrzD9HAZK4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6wW0dz6LE4pfMDOpDDZo8teyRSA");
+        height: max(100%, 50%);
+        max-width: 80%;
+        display: block;
+    }
+    #pTwoContainer{
+        display: none;
+    }
+    #miniP2{
+        left: 50%;
+        background-image: url("https://i.ytimg.com/vi/ENrzD9HAZK4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6wW0dz6LE4pfMDOpDDZo8teyRSA");
+        height: max(100%, 50%);
+        max-width: 80%;
+        display: block;
+    }
+    #pThreeContainer{
+        display: none;
+    }
+    #miniP3{
+        left: 50%;
+        background-image: url("https://i.ytimg.com/vi/ENrzD9HAZK4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6wW0dz6LE4pfMDOpDDZo8teyRSA");
+        height: max(100%, 50%);
+        max-width: 80%;
+        display: block;
+    }
+} */
+
+/* honorable mentions */
+
+.projects-container-secondary{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#mentionTitle{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+    color: rgb(204, 214, 246);
+    margin-bottom: 0;
+}
+
+.mentionSubTitle{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(204, 214, 246);
+    position: relative;
+    padding-left: 30px;
+}
+
+#mentionsContainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projectCard{
+    background-color: rgb(18,35,64);
+    width: 340px;
+    height: 300px;
+    border-radius: 6px;
+    margin-top: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#card0{
+    background-color: aliceblue;
+}
+
+.projects-container-secondary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentionDescription{
+    color: rgb(168, 178, 209);
+    font: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 17px;
+    display: block;
+    line-height: 22.1px;
+    width: 80%;
+    padding-left: 30px;
+}
+
+.listContainer{
+    justify-self: flex-end;
+}
+
+.mentionsTechList{
+    display: flex; 
+    margin-top: 0px;
+    padding-left: 30px;   
+}
+
+.technology{
+    color: rgb(136, 146, 176);
+    display: list-item;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 13px;
+    line-height: 16.9px;
+    margin-right: 20px;
+    list-style: none;
+    text-align: left;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+.mentionsGitLink{
+    width: 21px;
+    color: rgb(168, 178, 209);
+    stroke-width: 1;
+    float: right;
+    margin-right: 15px;
+    padding-top: 32px;
+    stroke-width: 1.6px;
+}
+
+.mentionsGitLink:hover { 
+    color: rgb(100, 255, 218); 
+    stroke-width: 1.5px;
+}
+
+.mentionsExternalLink{
+    width: 24px;
+    color: rgb(168, 178, 209);
+    stroke-width: 1;
+    float: right;
+    padding-right: 30px;
+    padding-top: 30px;
+    stroke-width: 1.6px;
+}
+
+.mentionsExternalLink:hover { 
+    color: rgb(100, 255, 218); 
+    stroke-width: 1.5px;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .projects-section{
+        /* margin: 450px 10% 0px 10%; */
+        width: 80%;
+
+    }
+
+    #mentionsContainer{
+        align-self: center;
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px 20px;
+    }
+
+    .projectCard{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+        .projects-section{
+        margin: 350px 100px 0px 100px;
+        width: calc(100% - 50px);
+    }
+
+    #mentionsContainer{
+        margin-top: 50px;
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2.5% 2.5%;
+    }
+
+    .projectCard{
+        width: 98%;
+        height: 280px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 821px) {
+
+    .projects-section{
+        margin: 350px 100px 0px 100px;
+    }
+
+    .projects-container{
+        margin: 0;
+        row-gap: 30px;
+    }
+
+    #mentionsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: visible;
+        row-gap: 25px;
+    }
+
+    .projectCard{
+        width: 320px;
+        height: 280px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .projects-section{
+        margin: 350px 25px 0px 25px;
+        width: calc(100% - 50px);
+    }
+
+    #projectNumber{
+        font-size: 20px;
+    }
+    
+    #projectTitle{
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .projects-container{
+        row-gap: 30px;
+    }
+
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #122340;
+    }
+
+    .project-content{
+        align-items: flex-start;
+        padding: 30px 40px 40px 40px;
+    }
+
+    .description-box{
+        background-color: initial;
+        display: block;
+        box-sizing: border-box;
+        width: 80%;
+    }
+
+    .description{
+        text-align: left;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .tech-list{
+        align-self: flex-start;
+    }
+
+    .tech{
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .projects-container-secondary{
+        justify-content: center;
+        row-gap: 0;
+    }
+
+    #mentionsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 25px;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .projectCard{
+        width: 320px;
+        height: 280px;
+    }
+}

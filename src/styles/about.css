@@ -1,0 +1,427 @@
+/* 
+--desktop: 1200px;
+--laptop: 1024px;
+--tablet: 768px;
+--phone: 480px; 
+*/
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 80px 0px 0px 0px;
+    margin-bottom: 150px;
+    max-width: 1100px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.start{
+    visibility: visible;
+    opacity: 0;
+    animation: fadeIn 1.5s .25s forwards;
+    -webkit-animation: fadeIn 1.5s .25s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.intro-text{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 350;
+    color: rgb(136, 146, 176);
+}
+
+.present-text{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 350;
+    color: rgb(136, 146, 176);
+}
+
+.ul-header{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 350;
+    color: rgb(136, 146, 176);
+}
+
+.current-interests{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0 10px;
+    margin: 20px 0px 0px -45px;
+}
+
+.technology{
+    display: list-item;
+    font-size: 13px;
+}
+
+.current-interests li::before{
+    content: "▹";
+    color: rgb(100, 255, 218);
+    line-height: 12px;
+    position: relative;
+}
+
+#keyWord{
+    color:rgb(100, 255, 218);
+    text-decoration: underline;
+}
+
+#aboutHeaderContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 98%;
+}
+
+
+#aboutProjectNumber{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: rgb(100, 255, 218);
+    font-size: 25px;
+}
+
+#aboutHeader{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+    color: rgb(204, 214, 246);
+    margin-right: 10px;
+}
+
+    
+#aboutLine{
+    border: 1px solid rgb(136, 146, 176);
+    flex: 1 1 auto;
+}
+
+/* styles for desktop */
+@media screen and (min-width: 1200px) {
+
+    .about-section{
+        margin: 0px 180px 0px 250px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    #aboutProjectNumber{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+        color: rgb(100, 255, 218);
+        font-size: 20px;
+    }
+    
+    #aboutHeader{
+        font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        color: rgb(204, 214, 246);
+    }
+    
+    .about-content{
+        display: flex;
+        flex-direction: row;
+    }  
+    
+    #aboutTextContainer{
+        flex: 1 1 0px;
+        display: block;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        min-width: 0;
+        text-align: left;
+    }
+
+    .intro-text{
+        display: block;
+        box-sizing: border-box;
+        margin: 0px 1px 0px 1px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .present-text{
+        display: block;
+        box-sizing: border-box;
+        margin: 25px 1px 0px 1px;
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .ul-header{
+        display: block;
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .technology{
+        display: list-item;
+        font-size: 19px;
+    }
+    
+    #aboutMediaContainer{
+        align-self: center;
+        flex: 1 1 0px;
+        height: inherit;
+    }
+    
+    #aboutMedia{
+        align-self: center;
+    }
+
+}
+
+/* styles for laptop */
+@media screen and (max-width: 1024px) {
+
+    .about-section{
+        min-height: 80vh;
+        margin: 0px 100px 0px 100px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    #aboutProjectNumber{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+        color: rgb(100, 255, 218);
+        font-size: 20px;
+    }
+    
+    #aboutHeader{
+        font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        color: rgb(204, 214, 246);
+    }
+    
+    #aboutLine{
+        border: 1px solid rgb(136, 146, 176);
+        flex: 1 1 auto;
+    }
+    
+    .about-content{
+        display: flex;
+        flex-direction: row;
+    }  
+    
+    #aboutTextContainer{
+        flex: 1 1 0px;
+        display: block;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        min-width: 0;
+        text-align: left;
+    }
+
+    .intro-text{
+        display: block;
+        box-sizing: border-box;
+        margin: 0px 1px 0px 1px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .present-text{
+        display: block;
+        box-sizing: border-box;
+        margin: 25px 1px 0px 1px;
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .ul-header{
+        display: block;
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .technology{
+        display: list-item;
+        font-size: 19px;
+    }
+    
+    #aboutMediaContainer{
+        align-self: center;
+        flex: 1 1 0px;
+        height: inherit;
+    }
+    
+    #aboutMedia{
+        margin-top: 45px;
+    }
+
+}
+
+/* styles for tablet */
+@media screen and (max-width: 821px) {
+
+    .about-section{
+        margin: 0px 100px 0px 100px;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    #aboutProjectNumber{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+        color: rgb(100, 255, 218);
+        font-size: 20px;
+    }
+    
+    #aboutHeader{
+        font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        color: rgb(204, 214, 246);
+    }
+    
+    #aboutLine{
+        border: 1px solid rgb(136, 146, 176);
+        flex: 1 1 auto;
+    }
+    
+    .about-content{
+        display: flex;
+        flex-direction: column;
+    }  
+    
+    #aboutTextContainer{
+        display: block;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        min-width: 0;
+        text-align: left;
+    }
+
+    .intro-text{
+        display: block;
+        box-sizing: border-box;
+        margin: 0px 1px 0px 1px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .present-text{
+        display: block;
+        box-sizing: border-box;
+        margin: 25px 1px 0px 1px;
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .ul-header{
+        display: block;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .technology{
+        display: list-item;
+        font-size: 18px;
+    }
+    
+    #aboutMediaContainer{
+        height: inherit;
+    }
+    
+    #aboutMedia{
+        margin-top: 45px;
+    }
+}
+
+/* styles for phone */
+@media screen and (max-width: 480px) {
+    .about-section{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100%-50px);
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    #aboutProjectNumber{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+        color: rgb(100, 255, 218);
+        font-size: 20px;
+    }
+    
+    #aboutHeader{
+        font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        color: rgb(204, 214, 246);
+    }
+    
+    #aboutLine{
+        border: 1px solid rgb(136, 146, 176);
+        flex: 1 1 auto;
+    }
+    
+    .about-content{
+        display: flex;
+        flex-direction: column;
+    }  
+    
+    #aboutTextContainer{
+        display: block;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        min-width: 0;
+        text-align: left;
+    }
+
+    .intro-text{
+        overflow: hidden;
+        white-space: wrap;
+        display: block;
+        box-sizing: border-box;
+        max-width: 540px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .present-text{
+        display: block;
+        box-sizing: border-box;
+        margin: 20px 1px 0px 1px;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .ul-header{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    #aboutMediaContainer{
+        height: inherit;
+    }
+    
+    #aboutMedia{
+        margin-top: 25px;
+    }
+}
+

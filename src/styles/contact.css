@@ -1,0 +1,72 @@
+
+
+.contact-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10vw 0px 10vw;
+}
+
+#contactTitle{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: rgb(100, 255, 218);
+    font-size: minmax(16px, 26px);
+    margin: 0;
+}
+
+#contactHeader{
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 44.9px;
+    font-weight: 600;
+    color: rgb(204, 214, 246);
+    margin: 15px 0 15px 0;
+}
+
+#contactText{
+    display: block;
+    box-sizing: border-box;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    color: rgb(136, 146, 176);
+    font-size: 18px;
+    text-justify: inter-character;
+    margin: 0;
+}
+
+.contact-btn{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    border: 1px solid rgb(100, 255, 218);
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-section {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 821px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    .contact-section{
+        width: 80%;
+        margin: 0px 25px 0px 25px;
+    }
+}

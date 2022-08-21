@@ -1,0 +1,111 @@
+.projects-section-mini{
+    margin: 0px 25px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.projects-container-mini{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+    margin-bottom: 150px;
+}
+
+.featured-card-mini{
+    background-color: #122340;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    row-gap: 0px;
+}
+
+.content-mini{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.featured-mini{
+    margin-bottom: 0;
+    font-family: var(--font-mono);
+    color: rgb(100, 255, 218);
+    font-weight: 400;
+}
+
+.project-title-mini{
+    color: rgb(204, 214, 246);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.description-box-mini{
+    width: 85%;
+}
+
+.description-box-mini > p{
+    color: rgb(168, 178, 209);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    line-height: 1.1;
+    font-size: 16px;
+}
+
+.tech-list-mini{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 13px;
+    list-style: none;
+    margin-left: 0;
+    padding: 0 10px 0 0;
+}
+
+.tech-mini{
+    color: rgb(136, 146, 176);
+    display: list-item;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 13px;
+}
+
+.btn-container-mini{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.git-link-mini{
+    height: 21px;
+    color: white;
+    stroke-width: 1.2;
+}
+
+.external-link-mini{
+    width: 24px;
+    color: white;
+    stroke-width: 1.2;
+}
+
+.mini-img-wrapper{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.mini-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}

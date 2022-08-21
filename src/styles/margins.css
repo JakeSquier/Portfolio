@@ -1,0 +1,121 @@
+/* right margin styles */
+
+#rightMarginContainer {
+    /* background-color: blue;
+    position: fixed;
+    bottom: 0px;
+    right: 100px;
+    height: 90%;
+    width: 100px;
+    text-align: center;
+    z-index: 2; */
+    height: 90%;
+    width: 100px;
+    position: fixed;
+    right: 0px;
+    text-align: center;
+    bottom: -130px;
+}
+
+#rightLine {
+    margin: 48px;
+    margin-bottom: 100px;    
+    height: 30%;  
+    border-left: .5px solid rgb(204, 214, 246);
+}
+
+#email {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 150px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 12px;
+    color: rgb(168, 178, 209);
+    letter-spacing: 1.2px;
+    line-height: 15.6;
+    transform: rotate(90deg);
+}
+
+#email:hover{
+    color: rgb(100, 255, 218);
+    font-weight: 500;
+}
+
+/* left margin */
+
+#leftMarginContainer{
+    position: fixed;
+    overflow: hidden;
+    bottom: 0px;
+    height: 90%;
+    width: 100px;
+    text-align: center;
+}
+
+#subContainer{
+    position: fixed;
+    bottom: 120px;
+    height: 50%;
+    width: 100px;  
+}
+
+#leftLine{
+    position: fixed;
+    bottom: 0px;
+    height: 17%;  
+    border-left: .5px solid rgb(204, 214, 246);
+}
+
+#gitLink{
+    Position: relative;
+    top: 285px;
+    text-align: center;
+    display: block;
+}
+
+#gitBtn{
+    color: rgb(204, 214, 246);
+    width: 30%;
+    stroke-width: 1px;
+}
+
+#gitBtn:hover { 
+    color: rgb(100, 255, 218); 
+    stroke-width: 1.5px;
+}
+
+#liLink{
+    position: relative;
+    top: 300px;
+    text-align: center;
+    display: block;
+}
+
+#liBtn{
+    color: rgb(204, 214, 246);
+    width: 30%;
+    stroke-width: 1px;
+}
+
+#liBtn:hover { 
+    color: rgb(100, 255, 218); 
+    stroke-width: 1.5px;
+}
+
+/* all margins */
+
+@media only screen and (max-width: 1100px) {
+    #rightMarginContainer,
+    #rightLine,
+    #email,
+    #leftMarginContainer,
+    #subContainer,
+    #leftLine,
+    #gitLink,
+    #gitBtn,
+    #liLink,
+    #liBtn{
+        display: none;
+    }
+  }
