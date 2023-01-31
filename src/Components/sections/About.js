@@ -1,10 +1,10 @@
 import React from 'react';
 import "../../styles/about.css";
 
-const img0 = require('/Users/Jake.Squier/portfolioFinal/p0rtf0li0/src/images/cool.jpeg').default
-const img1 = require('/Users/Jake.Squier/portfolioFinal/p0rtf0li0/src/images/elon.jpeg').default
-const img2 = require('/Users/Jake.Squier/portfolioFinal/p0rtf0li0/src/images/flatiron.jpeg').default
-const img3 = require('/Users/Jake.Squier/portfolioFinal/p0rtf0li0/src/images/homer.png').default
+const img0 = require('../../images/cool.jpeg').default
+const img1 = require('../../images/elon.jpeg').default
+const img2 = require('../../images/flatiron.jpeg').default
+const img3 = require('../../images/homer.png').default
 
 
 class About extends React.Component {
