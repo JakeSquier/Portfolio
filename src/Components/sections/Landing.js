@@ -1,6 +1,4 @@
 import React from 'react';
-import Typical from 'react-typical';
-import Typewriter from 'typewriter-effect';
 import '../../styles/landing.css'
 
 class Landing extends React.Component {
