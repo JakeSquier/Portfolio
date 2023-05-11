@@ -4,6 +4,7 @@ const img0 = require('../../images/cool.jpeg').default
 const img1 = require('../../images/elon.jpeg').default
 const img2 = require('../../images/flatiron.jpeg').default
 const img3 = require('../../images/homer.png').default
+const img4 = require('../../images/image4.jpeg').default
 
 
 

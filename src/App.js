@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Portfolio from "./Components/Portfolio";
 import Loader from "./Components/Loader";
-import { useEffect, useState } from 'react'
 
 function App() {
 
