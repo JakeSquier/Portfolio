@@ -15,7 +15,7 @@ class Skills extends React.Component {
                 <div className='skills-content'>
                     <div className='skills-text'>
                         <p className='experience-text'>Since beginning my freelance developer journey I have collaborated on quite a few open source projects as well as, created a few web apps to convenience the lives small business owners. along the way I have collaborated with talented people and learned many things.</p>
-                        <p className='knowledge-text'>I strive to create exceptional and responsive applications that are quick and used with ease. My main area of expertise lies in Front-end development using, HTML, CSS and, JS. I also carry proficient knowledge in Back-end development that ensures data is organized and managed to the best extent possible.</p>
+                        <p className='knowledge-text'>I strive to create exceptional and responsive applications that are quick and used with ease. My main area of expertise lies in Front-end development using HTML, CSS and JS. I also carry proficient knowledge in Back-end development that ensures data is organized and managed to the best extent possible.</p>
                         <footer className='content-footer'>Visit my <span className='keyWord'>LinkedIn</span> profile or just <span className='keyWord'>contact</span> me.</footer>
                     </div>
                     <div className='skills-media'>

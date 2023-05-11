@@ -162,6 +162,28 @@
 }
 
 .project-image{
+
+}
+
+#pImg1{
+    align-self: center;
+    height: 95%;
+    max-width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    background-image: url('../images/codeit.png');
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 5px 20px 5px 20px;
+    border: solid 1px rgb(100, 255, 218);
+}
+
+#pImg3{
     align-self: center;
     height: 95%;
     max-width: 100%;
@@ -322,43 +344,6 @@
     color: rgb(100, 255, 218); 
     stroke-width: 2.2px;
 }
-
-
-
-/* media queries */
-
-/* @media only screen and (max-width: 930px) {
-    #pOneContainer{
-        display: none;
-    }
-    #miniP1{
-        left: 50%;
-        background-image: url("https://i.ytimg.com/vi/ENrzD9HAZK4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6wW0dz6LE4pfMDOpDDZo8teyRSA");
-        height: max(100%, 50%);
-        max-width: 80%;
-        display: block;
-    }
-    #pTwoContainer{
-        display: none;
-    }
-    #miniP2{
-        left: 50%;
-        background-image: url("https://i.ytimg.com/vi/ENrzD9HAZK4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6wW0dz6LE4pfMDOpDDZo8teyRSA");
-        height: max(100%, 50%);
-        max-width: 80%;
-        display: block;
-    }
-    #pThreeContainer{
-        display: none;
-    }
-    #miniP3{
-        left: 50%;
-        background-image: url("https://i.ytimg.com/vi/ENrzD9HAZK4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6wW0dz6LE4pfMDOpDDZo8teyRSA");
-        height: max(100%, 50%);
-        max-width: 80%;
-        display: block;
-    }
-} */
 
 /* honorable mentions */
 

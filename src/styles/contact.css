@@ -48,6 +48,12 @@
     padding-left: 28px;
     padding-right: 28px;
     margin-top: 60px;
+    transition: .5s;
+}
+
+.contact-btn:hover{
+    background-color: rgba(100, 255, 219, 0.112);
+    transform: translateY(-10px);
 }
 
 @media screen and (min-width: 1200px) {

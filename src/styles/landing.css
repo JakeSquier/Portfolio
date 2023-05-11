@@ -18,28 +18,28 @@
     opacity: 0;
     animation: slideInOnLoadY .5s forwards;
     -webkit-animation: slideInOnLoadY .5s forwards;
-    animation-delay: 1s;
+    animation-delay: 1.4s;
 }
 
 #name{
     opacity: 0;
     animation: slideInOnLoadY 1s forwards;
     -webkit-animation: slideInOnLoadY 1s forwards;
-    animation-delay: 1.25s;
+    animation-delay: 1.65s;
 }
 
 .phrase-text{
     opacity: 0;
     animation: slideInOnLoadLeft .5s forwards;
     -webkit-animation: slideInOnLoadLeft .5s forwards;
-    animation-delay: 1.75s;
+    animation-delay: 2.15s;
 }
 
 .landing-text{
     opacity: 0;
     animation: slideInOnLoadRight .5s forwards;
     -webkit-animation: slideInOnLoadRight .5s forwards;
-    animation-delay: 2s;
+    animation-delay: 2.4s;
 }
 
 .landing-btn{
@@ -59,7 +59,13 @@
     opacity: 0;
     animation: slideInOnLoadY 1s forwards;
     -webkit-animation: slideInOnLoadY 1s forwards;
-    animation-delay: 2.25s;
+    animation-delay: 2.65s;
+    transition: .5;
+}
+
+.landing-btn:hover{
+    background-color: rgba(100, 255, 219, 0.112);
+    transform: translateY(10px);
 }
 
 /* styles for desktop */
@@ -239,6 +245,9 @@
         font-weight: 400;
         margin: 0px;
         padding-bottom: 20px;
+        animation: slideInOnLoadY .5s forwards;
+        -webkit-animation: slideInOnLoadY .5s forwards;
+        animation-delay: .75s;
     }
     
     #name{
@@ -248,6 +257,9 @@
         color: rgb(204, 214, 246);
         margin: 0px;
         padding: 0px;
+        animation: slideInOnLoadY 1s forwards;
+        -webkit-animation: slideInOnLoadY 1s forwards;
+        animation-delay: 1s;
     }
     
     .phrase-text{
@@ -258,6 +270,9 @@
         margin-top: 10px;
         margin-bottom: 0px;
         padding: 0px;
+        animation: slideInOnLoadLeft .5s forwards;
+        -webkit-animation: slideInOnLoadLeft .5s forwards;
+        animation-delay: 1.5s;
     }
     
     .landing-text{
@@ -270,10 +285,15 @@
         font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;       
         margin-top: 20px;
         padding: 0px;
+        animation: slideInOnLoadRight .5s forwards;
+        -webkit-animation: slideInOnLoadRight .5s forwards;
+        animation-delay: 1.75s;
     }
 
     .landing-btn{
-
+        animation: slideInOnLoadY 1s forwards;
+        -webkit-animation: slideInOnLoadY 1s forwards;
+        animation-delay: 2s;
     }
 }
 

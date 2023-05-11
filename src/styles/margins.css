@@ -1,20 +1,27 @@
 /* right margin styles */
 
 #rightMarginContainer {
-    /* background-color: blue;
-    position: fixed;
-    bottom: 0px;
-    right: 100px;
-    height: 90%;
-    width: 100px;
-    text-align: center;
-    z-index: 2; */
     height: 90%;
     width: 100px;
     position: fixed;
     right: 0px;
     text-align: center;
     bottom: -130px;
+    opacity: 0;
+    animation: slideInOnLoadRightm .5s forwards;
+    -webkit-animation: slideInOnLoadRightm .5s forwards;
+    animation-delay: 3.15s;
+}
+
+@keyframes slideInOnLoadRightm {
+    0%{
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 #rightLine {
@@ -35,11 +42,14 @@
     letter-spacing: 1.2px;
     line-height: 15.6;
     transform: rotate(90deg);
+    transition: .5s;
+    cursor: pointer;
 }
 
 #email:hover{
     color: rgb(100, 255, 218);
     font-weight: 500;
+    transform: translateY(-10px) rotate(90deg);
 }
 
 /* left margin */
@@ -51,11 +61,26 @@
     height: 90%;
     width: 100px;
     text-align: center;
+    opacity: 0;
+    animation: slideInOnLoadLeftm .5s forwards;
+    -webkit-animation: slideInOnLoadLeftm .5s forwards;
+    animation-delay: 3.15s;
+}
+
+@keyframes slideInOnLoadLeftm {
+    0%{
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 #subContainer{
     position: fixed;
-    bottom: 120px;
+    bottom: 135px;
     height: 50%;
     width: 100px;  
 }
@@ -76,12 +101,14 @@
 
 #gitBtn{
     color: rgb(204, 214, 246);
-    width: 30%;
+    width: 25%;
     stroke-width: 1px;
+    transition: .5s;
 }
 
 #gitBtn:hover { 
     color: rgb(100, 255, 218); 
+    transform: translateY(-5px);
     stroke-width: 1.5px;
 }
 
@@ -94,12 +121,14 @@
 
 #liBtn{
     color: rgb(204, 214, 246);
-    width: 30%;
+    width: 25%;
     stroke-width: 1px;
+    transition: .5s;
 }
 
 #liBtn:hover { 
     color: rgb(100, 255, 218); 
+    transform: translateY(-5px);
     stroke-width: 1.5px;
 }
 

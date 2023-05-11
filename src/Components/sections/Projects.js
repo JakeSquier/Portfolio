@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCard'
 import '../../styles/projectsMini.css'
 import pathing from '../../images/pathing.png'
 import sorting from '../../images/sorting.png'
+import codeit from '../../images/codeit.png'
 
 const Projects = () => {
 
@@ -32,11 +33,11 @@ const Projects = () => {
                             } else if(project.title === 'Pathing Visualizer'){
                                 img = pathing
                             } else {
-                                img = sorting
+                                img = codeit
                             }
                             if(project.featured === true){
                                 return (
-                                    <div className='featured-card-mini'>
+                                    <div className='featured-card-mini hidden' id={'project' + project.id}>
                                         <div className='content-mini'>
                                             <p className="featured-mini">Featured</p>
                                             <h1 className="project-title-mini" id="pTitle">{project.title}</h1>
@@ -78,7 +79,7 @@ const Projects = () => {
                     <div id='mentionsContainer'>
                         {projectData.map((project, val) => {
                             if(project.featured === false){
-                                return <ProjectCard project={project} />
+                                return <ProjectCard project={project} val={val} />
                             }
                         })}
                     </div>
@@ -103,7 +104,7 @@ const Projects = () => {
                        projectFeaturedCout++;
                        if(projectFeaturedCout%2 != 0){
                            return(
-                               <div className="project" id="pContainer">
+                               <div className="project hidden" id={'project' + project.id}>
                                    <div className="project-content" id="pContent">
                                        <p className="featured" id="pFeatured">Featured</p>
                                        <h1 className="project-title" id="pTitle">{project.title}</h1>
@@ -130,12 +131,12 @@ const Projects = () => {
                                            </a>
                                        </div>
                                    </div>
-                                   <div className="project-image" id="pImg"><a className='inner-image'></a></div>
+                                   <div className="project-image" id={`pImg${projectFeaturedCout}`}><a className='inner-image'></a></div>
                                </div>
                            )
                        }else{
                            return(
-                               <div className="project-reverse" id="pReverseContainer">
+                               <div className="project-reverse hidden" id={'project' + project.id}>
                                    <div className="project-image-r" id="pReverseImg">
                                    </div>
                                    <div className="project-content-r" id="pReverseContent">

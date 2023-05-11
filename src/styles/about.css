@@ -20,18 +20,21 @@
     visibility: hidden;
 }
 
-.start{
+.start {
     visibility: visible;
     opacity: 0;
-    animation: fadeIn 1.5s .25s forwards;
-    -webkit-animation: fadeIn 1.5s .25s forwards;
+    transform: scale(.8);
+    animation: fadeInY 1.5s .25s forwards;
+    -webkit-animation: fadeInY 1.5s .25s forwards;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInY {
     from {
+        transform: translateY(20px) scale(.8);
         opacity: 0;
     }
     to {
+        transform: translateY(0px) scale(1);
         opacity: 1;
     }
 }
@@ -185,6 +188,8 @@
     
     #aboutMedia{
         align-self: center;
+        height: 37vh;
+        width: 17vw;
     }
 
 }
@@ -261,13 +266,16 @@
     }
     
     #aboutMediaContainer{
+        margin-top: 55px;
         align-self: center;
         flex: 1 1 0px;
         height: inherit;
     }
     
     #aboutMedia{
-        margin-top: 45px;
+        margin-top: 65px;
+        height: 37vh;
+        width: 50vw;
     }
 
 }
@@ -347,6 +355,8 @@
     
     #aboutMedia{
         margin-top: 45px;
+        height: 25vh;
+        width: 30vw;
     }
 }
 
@@ -422,6 +432,8 @@
     
     #aboutMedia{
         margin-top: 25px;
+        height: 37vh;
+        width: 50vw;
     }
 }
 

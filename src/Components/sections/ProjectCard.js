@@ -5,7 +5,7 @@ class ProjectCard extends React.Component{
     render(){
 
         return(
-            <div className='projectCard' id={'card' + this.props.val}>
+            <div className='projectCard hidden' id={'card' + this.props.val}>
                 <div>
                     <a href={this.props.project.externalLink}>
                         <svg className="mentionsExternalLink" id={`${this.props.project.title}-externalLink`} role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">

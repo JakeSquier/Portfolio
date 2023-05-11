@@ -13,7 +13,7 @@ class Landing extends React.Component {
                 <h2 id='name'>Jacob Squier.</h2>
                 <h2 className='phrase-text'>I build things for the web.</h2>
                 <p className='landing-text'>
-                    I'm a Software engineer based out of Houston, Texas who specializes in building and designing astounding software related experiences. Currently I am freelancing while pursuing a position in the industry.
+                    I'm a Software engineer based out of Houston, Texas who specializes in building and designing astounding software-related experiences. Currently, I am freelancing while pursuing a position in the industry.
                 </p>
                 <button className='landing-btn'>Check Out My LinkedIn!</button>
             </section>

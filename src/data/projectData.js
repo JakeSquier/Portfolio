@@ -1,17 +1,18 @@
 import pathing from '../images/pathing.png'
 import sorting from '../images/sorting.png'
+import codeit from '../images/codeit.png'
 
 
 export const projectData = [
     {
         id: 1,
         featured: true,       
-        title: 'Lorem',
-        description: 'lorem ipsum eeregreberbre bre ber bergearegehrtjhtyuj tj tyj tyj th trh egef g fg 4t h4 u yrhjryj tu jtuejgejgejb',
-        tech: ['React.js', 'MongoDB', 'Firebase', 'Fun'],
-        gitLink: '',
+        title: 'Code.it',
+        description: 'A Mern stack web app built to allow its users to script and web develop on the go! You can save your projects and even list them to the community page for all users to enjoy. Code.it supports 60+ languages, and enables you to customize the ide to your needs!',
+        tech: ['React.js', 'Express.js', 'MongoDb', 'Judge0'],
+        gitLink: 'https://github.com/JakeSquier/Codeit',
         externalLink: '',
-        picture: 'https://i.ytimg.com/vi/ENrzD9HAZK4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6wW0dz6LE4pfMDOpDDZo8teyRSA'
+        picture: codeit
     },
     {
         id: 2,
@@ -38,7 +39,7 @@ export const projectData = [
         featured: false,
         title: 'Code buddy',
         description: 'Code buddy is a web app that allows you to code in browser. It uses a rails backend with a react frontend and employs the codemirror ide. ',
-        tech: ['React.js', 'Rails', 'CodeMirror', 'auth0'],
+        tech: ['React.js', 'Rails', 'CodeMirror'],
         gitLink: 'https://github.com/JakeSquier/code-buddy',
         externalLink: '',
         picture: ''
@@ -48,7 +49,7 @@ export const projectData = [
         featured: false,
         title: 'Game Spot',
         description: 'Game Spot is a web that uses a rails backend with a react frontend. This app was built to play small games in browser using adobe flash',
-        tech: ['React.js', 'Rails', 'Adobe flash', 'auth)'],
+        tech: ['React.js', 'Rails', 'Adobe flash'],
         gitLink: 'https://github.com/JakeSquier/Game-Spot',
         externalLink: '',
         picture: ''
